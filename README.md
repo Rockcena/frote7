@@ -1,4 +1,4 @@
 # pages.domains-platform-sbx.tamg.cloud
 takeover by tp
 
-<script>alert(0)</script>
+<script>alert(document.domain)</script>
