@@ -1,2 +1,2 @@
 # pages.domains-platform-sbx.tamg.cloud
-testbug
+takeover by tp
